@@ -4,8 +4,8 @@ export const findLastUserId = async () => {
     .sort({
       createdAt: -1,
     })
-    .lean();
-    console.log(User, "line 8 utilis")
+    .lean()
+  console.log(User, 'line 8 utilis')
 
   return lastUser?.id
 }
@@ -13,7 +13,7 @@ export const findLastUserId = async () => {
 export const generateUserId = async () => {
   const currentId = (await findLastUserId()) || (0).toString().padStart(5, '0') //00000
   //increment by 1
-  const incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
-  console.log(incrementedId, "line 16 utilis")
+  const incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0')
+  console.log(incrementedId, 'line 16 utilis')
   return incrementedId
 }
