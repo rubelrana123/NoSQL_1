@@ -9,8 +9,8 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
   // auto generated incremental id
   const id = await generateUserId()
   user.id = id
-  console.log(config.default_user_pass, user, 'user pass')
-  console.log(config.database_url, 'user db')
+  // console.log(config.default_user_pass, user, 'user pass')
+  // console.log(config.database_url, 'user db')
   // default password
   if (!user.password) {
     user.password = config.default_user_pass as string
