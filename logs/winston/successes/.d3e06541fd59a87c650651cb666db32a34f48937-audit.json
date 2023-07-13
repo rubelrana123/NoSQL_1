@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Apollo Next Level PHero\\university-managment-auth-service\\logs\\winston\\successes\\.d3e06541fd59a87c650651cb666db32a34f48937-audit.json",
+    "files": [
+        {
+            "date": 1689275569025,
+            "name": "E:\\Apollo Next Level PHero\\university-managment-auth-service\\logs\\winston\\successes\\phu-2023-14-07-01-error.log",
+            "hash": "6bf2e4d532d6176e0ab96a7a58fa7518ed669515d47be19fab1b7a5131f6183c"
+        }
+    ],
+    "hashType": "sha256"
+}

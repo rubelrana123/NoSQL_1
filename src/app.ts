@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 // const express = require('express')
 import express, { Application, Request, Response } from 'express'
 import usersService from './app/modulers/users/users.service'
@@ -9,6 +11,10 @@ app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+// console.log(app.get("env")
+// )
+// console.log(process.env);
+// set Node_ENV = production && yarn start
 // Application routes
 
 app.use('/api/v1/users/', usersRouter)
