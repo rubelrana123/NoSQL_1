@@ -1,8 +1,9 @@
+// eslint-disable-next-line no-console
 import mongoose from 'mongoose'
 import app from './app'
 import config from './config'
 
-async function bootstrap() {
+async function main() {
   try {
     await mongoose.connect(config.database_url as string)
     console.log(`🛢 Database connection successful`)
@@ -15,4 +16,4 @@ async function bootstrap() {
   }
 }
 
-bootstrap()
+main()
